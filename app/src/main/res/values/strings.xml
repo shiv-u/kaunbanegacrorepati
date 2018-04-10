@@ -1,0 +1,17 @@
+<resources>
+
+    <string name="app_name">KBC</string>
+
+    <!-- Vertical Stepper View Sample Item -->
+    <!--<string name="content_step_0" >Click OK button to next step.\n\nTest Message.</string>-->
+    <string name="inst4">If you answer all 10 questions correctly you will win the prize money of one Crore.</string>
+    <string name="inst2">If you answer any question incorrectly then you will be eliminated from the game</string>
+    <string name="inst1">You have to answer 10 questions ,each question has four options</string>
+    <string name="inst3">You will given two lifelines 1)50:50-If you use this life line then  two incorrect choices will be removed\n2)DoubleDip:If you use this lifeline then you are able to make two guesses for a question</string>
+    <string name="toggle_animation_button">Toggle Animation</string>
+    <string name="question_text">Question-</string>
+    <string name="sorry">Sorry </string>
+
+
+
+</resources>

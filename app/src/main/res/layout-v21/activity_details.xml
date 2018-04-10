@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="select_image_demo.coderzheaven.com.selectimage.MainActivity">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="@android:color/white"
+    android:text="Profile"
+    android:textSize="30sp"
+    android:id="@+id/profile"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+
+
+    />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/profile"
+        android:layout_marginTop="7dp"
+        android:background="@android:color/white"
+        android:id="@+id/view" />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btnSelectImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="47dp"
+        android:layout_marginEnd="42dp"
+        android:src="@android:drawable/ic_menu_gallery" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+
+        android:layout_alignEnd="@+id/btnSelectImage"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/face" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgView"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_below="@+id/view"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="44dp"
+        app:civ_border_color="#fff" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/name"
+        android:hint="Name"
+        android:textColorHint="@android:color/holo_blue_light"
+        android:textColor="@android:color/holo_blue_light"
+        android:backgroundTint="@android:color/white"
+        android:layout_below="@id/imgView"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/name"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="15dp"
+        android:text="Sex"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:id="@+id/textView6" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView6"
+        android:background="@drawable/button"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:text="MALE"
+        android:paddingLeft="10dp"
+        android:paddingRight="20dp"
+        android:layout_below="@+id/textView6"
+        android:layout_marginTop="12dp"
+        android:id="@+id/checkBox" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnSelectImage"
+        android:layout_alignStart="@+id/checkBox"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/button"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:paddingLeft="10dp"
+        android:paddingRight="20dp"
+        android:text="FEMALE" />
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="18dp"
+        android:onClick="game"
+        android:text="Let's Play" />
+
+
+</RelativeLayout>
+
+

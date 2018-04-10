@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00AA8D"
+    tools:context="com.androidexample.kbc.Game">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        app:cardElevation="20dp"
+        android:layout_height="300dp"
+        android:id="@+id/cardView">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="13dp"
+                android:src="@drawable/kbclogo"
+                app:civ_border_color="#fff"
+                android:layout_marginLeft="13dp"
+                android:layout_alignParentLeft="true" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/question"
+                android:id="@+id/fifty"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="12dp"
+                android:onClick="fiftyclicked"
+                app:backgroundTint="@android:color/white"
+                android:src="@drawable/fifty"
+                android:layout_alignRight="@+id/question" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/fifty"
+                android:layout_below="@+id/fifty"
+                android:layout_marginTop="21dp"
+                android:onClick="doubledipclicked"
+                android:id="@+id/doubledip"
+                app:backgroundTint="@android:color/white"
+                android:src="@drawable/doubledip"
+                android:layout_alignLeft="@+id/fifty" />
+
+            <TextView
+                android:id="@+id/question_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="11dp"
+                android:text="@string/question_text"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/question_no"
+                android:layout_marginTop="30dp"
+                android:maxLines="4"
+                android:text="Who is the only Indian film actor who has won national film award for both acting and playback singing"
+                android:textAlignment="center"
+                android:textColor="#008975"
+                android:textSize="20sp"
+                android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="151dp"
+        android:layout_height="72dp"
+        android:layout_alignStart="@+id/cardView"
+        android:layout_below="@+id/cardView"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="20dp"
+        android:layout_marginTop="39dp"
+        app:cardElevation="20dp"
+        android:id="@+id/cardView2"
+        android:layout_alignLeft="@+id/cardView">
+
+        <Button
+            android:layout_width="151dp"
+            android:background="@drawable/button"
+            android:textColor="#006064"
+            android:id="@+id/button1"
+            android:onClick="button1clicked"
+            android:clickable="true"
+
+            android:text="Pranab mukarjee"
+            android:layout_height="72dp"
+            android:focusable="true" />
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_width="151dp"
+        android:layout_height="72dp"
+        android:layout_alignEnd="@+id/cardView"
+        android:layout_below="@+id/cardView"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="20dp"
+        android:layout_marginTop="39dp"
+        android:layout_alignRight="@+id/cardView">
+
+        <Button
+            android:layout_width="150dp"
+            android:background="@drawable/button"
+            android:textColor="#006064"
+            android:text="rajendra prasad"
+            android:onClick="button2clicked"
+            android:clickable="true"
+            android:id="@+id/button2"
+            android:layout_height="72dp"
+            android:focusable="true" />
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="151dp"
+        android:layout_height="72dp"
+        android:layout_alignStart="@+id/cardView2"
+        android:layout_below="@+id/cardView2"
+        android:layout_marginTop="28dp"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="20dp"
+        android:layout_alignLeft="@+id/cardView2">
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="72dp"
+            android:id="@+id/button3"
+            android:onClick="button3clicked"
+            android:textSize="15sp"
+            android:textColor="#006064"
+            android:clickable="true"
+            android:text="APJ abdul Kalam"
+            android:background="@drawable/button"
+            android:focusable="true" />
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_width="151dp"
+        android:layout_height="72dp"
+        android:layout_alignEnd="@+id/cardView"
+        android:layout_below="@+id/cardView2"
+        android:layout_marginTop="28dp"
+        app:cardElevation="20dp"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="20dp"
+        android:layout_alignRight="@+id/cardView">
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="72dp"
+            android:id="@+id/button4"
+            android:onClick="button4clicked"
+            android:textColor="#006064"
+            android:clickable="true"
+            android:text="rada krishna"
+            android:background="@drawable/button"
+            android:focusable="true" />
+    </android.support.v7.widget.CardView>
+
+
+
+</RelativeLayout>
